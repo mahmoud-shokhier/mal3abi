@@ -1,0 +1,135 @@
+* {
+  font-family: "Cairo";
+}
+.navbar {
+  background-color: white !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.15);
+  a {
+    color: black;
+    border-bottom: 1px solid transparent;
+    margin: auto 16px;
+    &:hover {
+      border-bottom: 1px solid black;
+      transition: all 300ms ease-in-out;
+    }
+    &.navbar-brand {
+      border: none !important;
+      img {
+        height: 55px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+.header {
+  width: 100%;
+  height: calc(100vh - 57px);
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  background: url("../imgs/header-bg.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.header-text {
+  text-align: center;
+  padding: 15% 0px;
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 16px auto;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.img-btn {
+  padding: 0px !important;
+  margin: auto 8px;
+  border: none !important;
+  outline: none !important;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh 5vw;
+}
+.center-content {
+  display: block;
+  height: 80vh;
+  width: 90vw;
+  text-align: center;
+  img {
+    object-fit: contain;
+    max-width: 250px;
+    max-height: 250px;
+  }
+  h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  p {
+    color: #9c9c9c;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+}
+.section-header {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 16px 0px;
+  border-bottom: 2px dashed #2ecb70;
+  display: inline-block;
+  margin: 8vh auto;
+}
+#payment-methods {
+  .section-header {
+    margin: 2vh auto;
+  }
+  h6 {
+    font-size: 1.2rem;
+    margin: 8px auto;
+  }
+}
+.social-container {
+  margin: 16px auto;
+  padding: 32px;
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #cbcbcb;
+    font-weight: bold;
+    font-size: 12px;
+    img {
+      width: 36px;
+      height: 36px;
+      display: block;
+      margin-bottom: 8px;
+    }
+  }
+}
+form {
+  .btn-success {
+    background-color: #2ecb70 !important;
+  }
+}
